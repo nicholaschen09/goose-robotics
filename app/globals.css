@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "A Day Without Sun Text Regular";
+  src: url("/fonts/a-day-without-sun-text-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   --background: #ede8dd;
   --foreground: #2b241f;
@@ -16,4 +24,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.font-a-day-without-sun {
+  font-family: "A Day Without Sun Text Regular", "A Day Without Sun Text", ui-sans-serif, system-ui;
+  font-style: normal;
+  font-weight: 400;
 }

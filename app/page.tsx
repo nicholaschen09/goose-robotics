@@ -13,10 +13,17 @@ export default function Home() {
       />
       <button
         type="button"
-        className="absolute left-6 top-6 z-20 text-lg text-[#2b241f] transition-opacity duration-200 hover:opacity-80"
-        style={{ fontFamily: '"A Day Without Sun Text Regular", ui-sans-serif, system-ui' }}
+        className="absolute left-2 top-2 z-20 transition-opacity duration-200 hover:opacity-80"
+        aria-label="Join us"
       >
-        Join us <span aria-hidden="true">&gt;</span>
+        <Image
+          src="/join-us.png"
+          alt=""
+          width={150}
+          height={35}
+          className="h-auto w-[150px] object-contain"
+          priority
+        />
       </button>
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-10 pt-1">
         <div className="flex justify-center">
