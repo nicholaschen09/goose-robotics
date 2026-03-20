@@ -4,30 +4,31 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden text-[#2b241f]">
       <Image
-        src="/humanoid-img.png"
-        alt="Humanoid background"
+        src="/background-image.jpg"
+        alt="Background"
         fill
-        className="object-contain blur-[22px]"
+        className="object-cover"
         sizes="100vw"
         priority
       />
-      <div className="absolute inset-0 bg-[#ede8dd]/52" />
-
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-10 pt-6">
+      <button
+        type="button"
+        className="absolute left-6 top-6 z-20 text-lg text-[#2b241f] transition-opacity duration-200 hover:opacity-80"
+        style={{ fontFamily: '"A Day Without Sun Text Regular", ui-sans-serif, system-ui' }}
+      >
+        Join us <span aria-hidden="true">&gt;</span>
+      </button>
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-10 pt-1">
         <div className="flex justify-center">
           <Image
-            src="/goose.png"
+            src="/goose-robotics.png"
             alt="Goose Robotics"
-            width={520}
-            height={165}
-            className="h-auto w-full max-w-[520px] object-contain"
+            width={250}
+            height={80}
+            className="h-auto w-full max-w-[250px] object-contain"
             priority
           />
         </div>
-
-        <main id="home" className="grid flex-1 place-items-center py-12 text-center">
-          <h1 className="text-5xl font-semibold tracking-tight md:text-7xl">humanoids.</h1>
-        </main>
 
       </div>
     </div>
