@@ -11,11 +11,28 @@ export default function Home() {
         sizes="100vw"
         priority
       />
+      <details className="absolute left-2 top-2 z-30 md:hidden">
+        <summary className="cursor-pointer list-none text-3xl leading-none text-white">
+          <span aria-hidden="true">☰</span>
+          <span className="sr-only">Open menu</span>
+        </summary>
+        <div className="mt-2 min-w-[140px] rounded-md bg-black/70 p-3 backdrop-blur-sm">
+          <a
+            href="https://www.linkedin.com/company/gooserobotics/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white"
+          >
+            Join us
+          </a>
+        </div>
+      </details>
+
       <a
         href="https://www.linkedin.com/company/gooserobotics/posts/?feedView=all"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute left-2 top-2 z-20 origin-top-left transition-all duration-200 hover:scale-105 hover:opacity-80"
+        className="absolute left-2 top-2 z-20 hidden origin-top-left transition-all duration-200 hover:scale-105 hover:opacity-80 md:block"
         aria-label="Join us"
       >
         <Image
