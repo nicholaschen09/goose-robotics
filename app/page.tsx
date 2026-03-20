@@ -13,7 +13,7 @@ export default function Home() {
       />
       <button
         type="button"
-        className="absolute left-2 top-2 z-20 transition-opacity duration-200 hover:opacity-80"
+        className="absolute left-2 top-2 z-20 origin-top-left transition-all duration-200 hover:scale-105 hover:opacity-80"
         aria-label="Join us"
       >
         <Image
@@ -21,7 +21,7 @@ export default function Home() {
           alt=""
           width={150}
           height={35}
-          className="h-auto w-[150px] object-contain"
+          className="h-auto w-[150px] object-contain brightness-0 invert"
           priority
         />
       </button>
@@ -32,7 +32,7 @@ export default function Home() {
             alt="Goose Robotics"
             width={250}
             height={80}
-            className="h-auto w-full max-w-[250px] object-contain"
+            className="h-auto w-full max-w-[250px] object-contain brightness-0 invert"
             priority
           />
         </div>
