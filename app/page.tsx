@@ -11,8 +11,10 @@ export default function Home() {
         sizes="100vw"
         priority
       />
-      <button
-        type="button"
+      <a
+        href="https://www.linkedin.com/company/gooserobotics/posts/?feedView=all"
+        target="_blank"
+        rel="noopener noreferrer"
         className="absolute left-2 top-2 z-20 origin-top-left transition-all duration-200 hover:scale-105 hover:opacity-80"
         aria-label="Join us"
       >
@@ -24,7 +26,7 @@ export default function Home() {
           className="h-auto w-[150px] object-contain brightness-0 invert"
           priority
         />
-      </button>
+      </a>
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-10 pt-1">
         <div className="flex justify-center">
           <Image
