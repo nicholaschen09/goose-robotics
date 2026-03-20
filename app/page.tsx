@@ -7,7 +7,7 @@ export default function Home() {
         src="/humanoid-img.png"
         alt="Humanoid background"
         fill
-        className="object-contain blur-[14px]"
+        className="object-contain blur-[22px]"
         sizes="100vw"
         priority
       />
