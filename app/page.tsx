@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden text-[#2b241f]">
+    <div className="relative min-h-[100dvh] overflow-hidden text-[#2b241f]">
       <Image
         src="/background-image.jpg"
         alt="Background"
@@ -27,7 +27,7 @@ export default function Home() {
           priority
         />
       </a>
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-10 pt-1">
+      <div className="relative z-10 mx-auto flex min-h-[100dvh] w-full max-w-6xl flex-col px-6 pb-10 pt-1">
         <div className="flex justify-center">
           <Image
             src="/goose-robotics.png"
