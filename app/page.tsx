@@ -3,19 +3,21 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="relative min-h-[100dvh] overflow-hidden text-[#2b241f]">
-      <Image
-        src="/background-image.jpg"
-        alt="Background"
-        fill
-        className="object-cover"
-        sizes="100vw"
-        priority
-      />
+      <div className="fixed inset-0 -z-10">
+        <Image
+          src="/background-image.jpg"
+          alt="Background"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
       <a
         href="https://www.linkedin.com/company/gooserobotics/posts/?feedView=all"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-2 left-1/2 z-20 -translate-x-1/2 origin-center transition-opacity duration-200 hover:opacity-100 md:left-2 md:top-2 md:translate-x-0 md:origin-bottom-left"
+        className="fixed bottom-2 left-1/2 z-20 -translate-x-1/2 origin-center transition-opacity duration-200 hover:opacity-100 md:absolute md:left-2 md:top-2 md:translate-x-0 md:origin-bottom-left"
         aria-label="Join us"
       >
         <Image
