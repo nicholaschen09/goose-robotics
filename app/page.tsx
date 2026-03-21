@@ -15,7 +15,7 @@ export default function Home() {
         href="https://www.linkedin.com/company/gooserobotics/posts/?feedView=all"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-2 left-1/2 z-20 -translate-x-1/2 transition-all duration-200 hover:scale-105 hover:opacity-80 md:left-2 md:top-2 md:translate-x-0"
+        className="absolute bottom-2 left-1/2 z-20 -translate-x-1/2 origin-center transition-opacity duration-200 hover:opacity-100 md:left-2 md:top-2 md:translate-x-0 md:origin-bottom-left"
         aria-label="Join us"
       >
         <Image
@@ -23,7 +23,7 @@ export default function Home() {
           alt=""
           width={150}
           height={35}
-          className="h-auto w-[110px] object-contain brightness-0 invert sm:w-[130px] md:w-[150px]"
+          className="h-auto w-[110px] object-contain brightness-0 invert transition-all duration-200 hover:brightness-110 sm:w-[130px] md:w-[150px]"
           priority
         />
       </a>
